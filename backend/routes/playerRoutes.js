@@ -1,6 +1,6 @@
 const express = require('express');
 const { check, validationResult } = require('express-validator');
-const { Op } = require('sequelize'); // Operadores para filtrado
+const { Op } = require('sequelize'); 
 const { Player } = require('../models/playerModels');
 
 const router = express.Router();

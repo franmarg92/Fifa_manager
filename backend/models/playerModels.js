@@ -1,5 +1,5 @@
 const { DataTypes } = require('sequelize');
-const sequelize = require('../config/database'); // Asegúrate de que esta ruta sea correcta
+const sequelize = require('../config/database'); 
 
 const Player = sequelize.define('Player', {
     id: {
