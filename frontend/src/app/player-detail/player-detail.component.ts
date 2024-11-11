@@ -19,13 +19,13 @@ export class PlayerDetailComponent {
 Highcharts: any;
 
   constructor(private fb: FormBuilder, private playerService: PlayerService) {
-    
+    // Formulario para buscar jugador por ID
     this.searchForm = this.fb.group({
       playerId: ['', [Validators.required, Validators.min(1)]]
     });
   }
 
-  
+  // Método para buscar el jugador por ID
   onSearch(): void {
     const playerId = this.searchForm.get('playerId')?.value;
     if (playerId) {

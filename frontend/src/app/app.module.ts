@@ -14,6 +14,9 @@ import { EditPlayerComponent } from './edit-player/edit-player.component';
 import { CreatePlayerComponent } from './create-player/create-player.component';
 import { NgApexchartsModule } from 'ng-apexcharts';
 import { HighchartsChartModule } from 'highcharts-angular';
+import { PlayerFilterComponent } from './player-filter/player-filter.component';
+
+
 
 
 
@@ -29,6 +32,7 @@ import { HighchartsChartModule } from 'highcharts-angular';
     PlayerDetailComponent,
     EditPlayerComponent,
     CreatePlayerComponent,
+    PlayerFilterComponent,
   ],
   imports: [
     BrowserModule,
@@ -36,7 +40,8 @@ import { HighchartsChartModule } from 'highcharts-angular';
     FormsModule,
     ReactiveFormsModule,
     NgApexchartsModule,
-    HighchartsChartModule
+    HighchartsChartModule,
+    
     
    
      

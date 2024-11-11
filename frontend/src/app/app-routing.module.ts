@@ -7,6 +7,7 @@ import { PlayersComponent } from './players/players.component';
 import { PlayerDetailComponent } from './player-detail/player-detail.component';
 import { EditPlayerComponent } from './edit-player/edit-player.component';
 import { CreatePlayerComponent } from './create-player/create-player.component';
+import { PlayerFilterComponent } from './player-filter/player-filter.component';
 
 const routes: Routes = [
   { 
@@ -36,6 +37,9 @@ const routes: Routes = [
   },
   { 
     path: 'edit-player/:id', component: EditPlayerComponent
+  },
+  {
+    path: 'player-filter', component: PlayerFilterComponent
   }
 ];
 

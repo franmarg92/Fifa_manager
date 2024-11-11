@@ -7,7 +7,7 @@ const router = express.Router();
 
 // Obtener todos los jugadores con paginación y filtrado
 router.get('/', async (req, res) => {
-    const limit = parseInt(req.query.limit) || 16; // Número de resultados por página (por defecto 16)
+    const limit = parseInt(req.query.limit) || 20; // Número de resultados por página (por defecto 16)
     const page = parseInt(req.query.page) || 1; // Página actual (por defecto 1)
     const { name, club, position } = req.query; // Filtros de búsqueda
 
@@ -122,8 +122,8 @@ router.post('/create', async (req, res) => {
             passing,
             dribbling,
             defending,
-            physic,
-            gender
+            physic
+        
         } = req.body;
 
         // Crear el nuevo jugador
@@ -153,13 +153,13 @@ router.post('/create', async (req, res) => {
             passing,
             dribbling,
             defending,
-            physic,
-            gender
+            physic
+            
         });
 
         res.status(201).json({ message: 'Jugador creado exitosamente', player: newPlayer });
     } catch (error) {
-        console.error(error); // Imprimir el error en la consola
+        console.error(error); 
         res.status(500).json({ message: 'Error al crear el jugador', error: error.message });
     }
 });

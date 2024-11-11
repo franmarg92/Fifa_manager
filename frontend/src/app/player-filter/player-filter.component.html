@@ -1,6 +1,42 @@
+<div class="conteiner-search">
+  <div class="search-bar">
+    
+    <input 
+      type="text" 
+      [(ngModel)]="searchTerm" 
+      (input)="applyFilters()" 
+      placeholder="Buscar por nombre"
+    />
+  </div>
+  
+  <div class="search-bar">
+    
+    <label for="club-filter"></label>
+    <input 
+      id="club-filter"
+      type="text" 
+      [(ngModel)]="selectedClub" 
+      (input)="applyFilters()" 
+      placeholder="Escribir Club"
+    />
+  </div>
+  
+  <div class="search-bar">
+    
+    <label for="position-filter"></label>
+    <input 
+      id="position-filter"
+      type="text" 
+      [(ngModel)]="selectedPosition" 
+      (input)="applyFilters()" 
+      placeholder="Escribir Posición"
+    />
+  </div>
+</div>
 
-
-<div *ngIf="loading" class="loading-message">Cargando jugadores...</div>
+  
+ 
+  <div *ngIf="loading" class="loading-message">Cargando jugadores...</div>
 
 
 <div *ngIf="!loading">
