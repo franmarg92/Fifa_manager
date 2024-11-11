@@ -8,7 +8,7 @@
       <button type="submit" [disabled]="!searchForm.valid">Buscar Jugador</button>
     </form>
 
-    <!-- Mostrar los detalles del jugador si se ha encontrado -->
+    
     <div *ngIf="player" class="player-details">
       <h3>Detalles del Jugador</h3>
       <p><strong>FIFA Version:</strong> {{ player.fifa_version }}</p>

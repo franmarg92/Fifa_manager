@@ -9,7 +9,7 @@ import { PlayerService } from '../players.service';
 })
 export class CreatePlayerComponent {
   playerForm: FormGroup;
-  message: string | null = null;  // Para mostrar el mensaje de éxito
+  message: string | null = null;  
 
   formFields = [
     { name: 'fifa_version', label: 'FIFA Version', placeholder: 'FIFA Version', type: 'text' },

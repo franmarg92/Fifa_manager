@@ -8,7 +8,7 @@ import { PlayerService } from '../players.service';
   styleUrls: ['./edit-player.component.css']
 })
 export class EditPlayerComponent implements OnInit {
-  playerId: number | undefined;  // Inicialización con undefined
+  playerId: number | undefined;  
   player: any = {};
 
   constructor(
@@ -19,8 +19,8 @@ export class EditPlayerComponent implements OnInit {
 
   ngOnInit(): void {
     this.route.paramMap.subscribe(params => {
-      this.playerId = +params.get('id')!;  // Aquí la propiedad playerId es asignada
-      this.loadPlayerDetails();            // Cargar los detalles del jugador
+      this.playerId = +params.get('id')!;  
+      this.loadPlayerDetails();           
     });
   }
 
@@ -42,7 +42,7 @@ export class EditPlayerComponent implements OnInit {
       this.playerService.updatePlayer(this.playerId, this.player).subscribe({
         next: () => {
           
-          this.router.navigate(['/players']);  // Redirige al listado de jugadores
+          this.router.navigate(['/players']);  
         },
         error: (err) => {
           console.error('Error al guardar cambios', err);

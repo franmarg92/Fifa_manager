@@ -20,7 +20,7 @@ export class RegisterComponent {
     });
   }
 
-  // Método para enviar el formulario
+  
   onSubmit(): void {
     if (this.registerForm.valid) {
       const { username, email, password } = this.registerForm.value;

@@ -6,11 +6,11 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class PlayerService {
-  private apiUrl = 'http://localhost:3000/players'; // URL de tu backend para jugadores
+  private apiUrl = 'http://localhost:3000/players'; 
 
   constructor(private http: HttpClient) {}
 
-  // Método para obtener jugadores con filtros de club, posición y nombre
+  
   getPlayers(limit: number = 16, page: number = 1, club: string = '', position: string = '', name: string = ''): Observable<any[]> {
     let params: any = {
       limit: limit.toString(),
@@ -30,7 +30,7 @@ export class PlayerService {
     return this.http.get<any[]>(`${this.apiUrl}`, { params });
   }
 
-  // Otros métodos...
+  
   getPlayerById(id: number): Observable<any> {
     return this.http.get<any>(`${this.apiUrl}/${id}`);
   }

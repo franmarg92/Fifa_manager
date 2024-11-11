@@ -1,4 +1,4 @@
-<!-- Barra de búsqueda -->
+
 <div class="search-bar">
   <input 
     type="text" 
@@ -8,7 +8,6 @@
   />
 </div>
 
-<!-- Filtro de Club -->
 <div class="filter">
   <label for="club">Filtrar por Club:</label>
   <select id="club" [(ngModel)]="selectedClub" (change)="onFilterChange()">
@@ -17,7 +16,7 @@
   </select>
 </div>
 
-<!-- Filtro de Posición -->
+
 <div class="filter">
   <label for="position">Filtrar por Posición:</label>
   <select id="position" [(ngModel)]="selectedPosition" (change)="onFilterChange()">
@@ -28,10 +27,9 @@
 
 
 
-<!-- Mensaje de carga -->
 <div *ngIf="loading" class="loading-message">Cargando jugadores...</div>
 
-<!-- Mostrar jugadores o mensaje de no hay jugadores -->
+
 <div *ngIf="!loading">
   <div *ngIf="filteredPlayers.length > 0; else noPlayers">
     <div class="players-container">
@@ -47,7 +45,7 @@
     </div>
   </div>
 
-  <!-- Si no hay jugadores, mostrar mensaje -->
+  
   <ng-template #noPlayers>
     <div class="no-players">No hay jugadores disponibles.</div>
   </ng-template>
@@ -58,9 +56,9 @@
     <button (click)="nextPage()">Siguiente</button>
   </div>
   
-  <!-- Vista ampliada del jugador -->
+  
   <div *ngIf="selectedPlayer" class="player-detail-modal">
-    <!-- Botón para cerrar la vista -->
+    
     <button class="close-btn" (click)="deselectPlayer()">Cerrar</button>
     <h3>Detalles del Jugador</h3>
     <p><strong>FIFA Version:</strong> {{ selectedPlayer.fifa_version }}</p>
@@ -92,7 +90,6 @@
     <p><strong>Defensa:</strong> {{ selectedPlayer.defending }}</p>
     <p><strong>Físico:</strong> {{ selectedPlayer.physic }}</p>
 
-    <!-- Botón de edición -->
     <button (click)="editPlayer(selectedPlayer.id)">Editar</button>
   </div>
 

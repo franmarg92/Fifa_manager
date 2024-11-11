@@ -1,4 +1,4 @@
-/* Contenedor principal del formulario de edición */
+
 .edit-player-form {
     margin: 0 auto;
     background: rgba(255, 255, 255, 0.8);
@@ -12,26 +12,26 @@
     overflow-y: auto; 
   }
   
-  /* Título */
+  
   .edit-player-form h3 {
     font-size: 1.5rem;
     margin-bottom: 20px;
   }
   
-  /* Estilo para cada grupo de campos */
+  
   .edit-player-form .form-group {
     margin-bottom: 15px;
     text-align: left;
     width: 100%;
   }
   
-  /* Estilos de las etiquetas */
+  
   .edit-player-form label {
     display: block;
     margin-bottom: 5px;
   }
   
-  /* Estilos para los campos de entrada */
+  
   .edit-player-form input {
     width: 80%;
     padding: 8px;
@@ -40,7 +40,7 @@
     margin-bottom: 10px;
   }
   
-  /* Estilo para el botón de guardar */
+  
   .edit-player-form button {
     width: 100%;
     padding: 10px;
@@ -52,17 +52,17 @@
     margin-top: 15px;
   }
   
-  /* Cambio de color del botón al pasar el mouse */
+  
   .edit-player-form button:hover {
     background-color: #253340;
   }
   
-  /* Estilo para inputs cuando están vacíos */
+  
   .edit-player-form input:invalid {
     border-color: red;
   }
   
-  /* Estilo para inputs cuando están correctos */
+  
   .edit-player-form input:valid {
     border-color: green;
   }

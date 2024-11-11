@@ -24,12 +24,12 @@ export class LoginComponent {
       this.authService.login(email, password).subscribe(
         (response) => {
           console.log('Inicio de sesión exitoso', response);
-          // Aquí puedes almacenar el token o cualquier otra información
-          this.router.navigate(['/players']); // Redirigir a la página de jugadores
+         
+          this.router.navigate(['/players']); 
         },
         (error) => {
           console.error('Error al iniciar sesión', error);
-          // Manejo de errores aquí, por ejemplo, mostrar un mensaje al usuario
+          
         }
       );
     }
