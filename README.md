@@ -26,7 +26,7 @@ Apliqué conocimientos previos de Angular y TypeScript Html y CSS Node y JS para
 
 Aquí puedes ver un video que muestra el funcionamiento de la aplicación desde el front-end:
 
-[Ver Video de Funcionamiento](<link_al_video>)
+[Ver Video de Funcionamiento](<https://www.youtube.com/watch?v=3e6D4BhshBU>)
 
 ## Créditos
 
